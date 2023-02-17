@@ -78,6 +78,6 @@ if [[ ${OS} = "windows" ]]; then
 fi
 
 CGO_ENABLED=0
-GO111MODULE=on CGO_ENABLED=${CGO_ENABLED} GOOS=${OS} GOARCH=${ARCH} go build -a -ldflags "$FLAG" -o vcluster-operator
+GO111MODULE=on CGO_ENABLED=${CGO_ENABLED} GOOS=${OS} GOARCH=${ARCH} go build -a -ldflags "$FLAG" -o goapp
 
 echo -e "Done"
